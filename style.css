@@ -1,0 +1,119 @@
+/* .choices{
+    height: 250px;
+    width: 250px;
+background-color: pink;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1{
+    background-color: rgb(8, 8, 41);
+    color: white;
+    height: 5rem ;
+    line-height: 5rem;
+}
+
+.choice{
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    display: flex;
+}
+
+.choice:hover{
+    cursor: pointer;
+    background-color: rgb(55, 55, 55);
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.005);
+ 
+}
+
+img{
+    height: 160px;
+    width: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding-top: 2rem;
+}
+
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    gap: 5rem;
+}
+
+.score{
+    border: solid rgb(55, 55, 55) 2px;
+    /* margin: 10px; */
+    padding: 10px;
+    height: 110px;
+    width: 130px;
+}
+
+#user-score , #comp-score {
+    font-size: 4rem;
+}
+.msg-container{
+    margin-top: 2.5rem;
+}
+
+#msg{
+    background-color: rgb(8, 8, 41);
+    color: white;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+    
+}
+.highlight {
+    color: rgb(8, 8, 41);
+    font-size: 1.2em;
+    margin-top: 2rem;
+    line-height: 1.5;
+}
+
+
+.clear {
+    background-color: rgb(8, 8, 41); 
+    color: white;                          
+    border-radius: 1rem;           
+    padding: 10px 15px;            
+    font-size: 0.8rem;
+    margin-top: 1rem;               
+    cursor: pointer;                
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+
+.clear:hover {
+    background-color: rgb(55, 55, 55); 
+    transform: scale(1.05);            
+}
+
+
+.clear:focus {
+    outline: none;                   
+    box-shadow: 0 0 5px rgba(8, 8, 41, 0.5); 
+}
+
+.fade-out {
+    opacity: 0;                      
+    transition: opacity 0.3s ease;  
+}
